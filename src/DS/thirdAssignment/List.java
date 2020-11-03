@@ -1,22 +1,11 @@
-package DS.ThirdAssignment;
+package DS.thirdAssignment;
 
 import java.util.Arrays;
 
 public class List {
-    /**
-     * Stores the elements of the list.
-     */
     private int[] array;
-
-    /**
-     * occupied1, stores the size of the first stack in pair.
-     */
-    private int occupied1;
-
-    /**
-     * occupied2, stores the size of the second stack in pair.
-     */
-    private int occupied2;
+    private int occupied1; //Stores size of the first stack in pair.
+    private int occupied2; //Stores size of the second stack in pair.
 
     /**
      * Constructs a list.

@@ -1,29 +1,14 @@
-package DS.ThirdAssignment;
+package DS.thirdAssignment;
 
 /**
  * This data structure is designed in a way, that each pair of the instanced stacks, share a single list
  * among them. So, for 10 stacks, we have 5 lists.
  */
 public class Stack {
-    /**
-     * numOfStacks, stores the number of stacks that have been instanced using this Stack class.
-     */
-    private static int numOfStacks = 0;
-
-    /**
-     * sharedList, stores the reference of the list, that is going to be shared among 2 stacks.
-     */
+    private static int numOfStacks = 0; //Number of stacks that have been instanced from this class.
     private static List sharedList;
-
-    /**
-     * list, stores the reference of the list of the stack.
-     */
     private final List list;
-
-    /**
-     * stackId, stores an id for the stack to be able to recognize the pair stacks.
-     */
-    private final int stackId;
+    private final int stackId; //Id for the first stack in pair is 1 and for second stack in pair it's 2.
 
     /**
      * Constructs a stack.
@@ -86,7 +71,7 @@ public class Stack {
         return list.toString(stackId);
     }
 
-    //Helper method to see if a number is odd or not.
+    //Helper method to see if a number is odd or even.
     private boolean isOdd(int number) {
         return !(number % 2 == 0);
     }
